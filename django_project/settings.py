@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # local apps
     "accounts.apps.AccountsConfig",
     "posts.apps.PostsConfig",
+    # 3rd party
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
@@ -127,3 +129,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # update the auth_user_model
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+# django rest config
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.AllowAny",
+    ]
+}
