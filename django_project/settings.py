@@ -134,9 +134,7 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 
 # django rest config
 REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.AllowAny",
-    ]
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
 }
 
 # whitelist external domains
