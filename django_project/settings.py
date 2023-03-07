@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # 3rd party
     "rest_framework",
     "corsheaders",
+    "rest_framework.authtoken",
 ]
 
 MIDDLEWARE = [
@@ -134,7 +135,13 @@ AUTH_USER_MODEL = "accounts.CustomUser"
 
 # django rest config
 REST_FRAMEWORK = {
-    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.AllowAny",
+    ],
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework.authentication.SessionAuthentication"
+        "rest_framework.authentication.TokenAuthentications",
+    ],
 }
 
 # whitelist external domains
