@@ -16,8 +16,8 @@ A blog app for sharing your ideas with the world. Comes with a full featured blo
 2.  Clone the repo and configure the virtual environment:
 
 ```
-$ git clone https://github.com/wsvincent/drfx.git
-$ cd drfx
+$ git clone https://github.com/AlbertHope7/blog_api_mastered.git
+$ cd blog_api_mastered
 $ pipenv install
 $ pipenv shell
 ```
