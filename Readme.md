@@ -1,6 +1,5 @@
-# DRFx
-
-A framework for launching new Django Rest Framework projects quickly. Comes with a custom user model, login/logout/signup, social authentication via django-allauth, and more.
+# BLOGGER
+A blog app for sharing your ideas with the world. Comes with a full featured blog app, custom user model, login/logout/signup, social authentication via django-allauth, and more.
 
 ## Features
 
@@ -42,7 +41,3 @@ Login with your superuser account. Then navigate to all users. Logout. Sign up f
 - signup - http://127.0.0.1:8000/api/v1/rest-auth/registration/
 
 ---
-
-Want to learn more about Django REST Framework? I've written an entire book that takes a project-based approach to building web APIs with Django. The first 2 chapters are available for free online at [https://djangoforapis.com/](https://djangoforapis.com/).
-
-[![Django for APIs](https://learndjango.com/static/images/books/dfa_cover_31.jpg)](https://djangoforapis.com)
